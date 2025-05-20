@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="./res/favicon.png">
+<title>Scheme Password Generator</title>
+<link rel="stylesheet" href="./css/index.css">
+<script src="./js/text.js"></script>
+<script src="./js/dm.js"></script>
+<script src="./js/ol.js"></script>
+<script src="./js/spg.js"></script>
+<script src="./js/main.js"></script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script>
+function init() {
+  MAIN.isonsm = true;
+  console.log(document);
+  console.log(document.getElementById('app'));
+  if(document.getElementById('app').getBoundingClientRect().width > 1000) {MAIN.isonsm = false;}
+  MAIN.init(document.getElementById('app'));
+}
+init();
+</script>
+</html>
